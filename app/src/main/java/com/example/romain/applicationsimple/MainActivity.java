@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 String firstnameValue = editFirst.getText().toString();
                 String lastnameValue = editLast.getText().toString();
                 if (firstnameValue.isEmpty() || lastnameValue.isEmpty()){
-                    Toast.makeText(context: MainActivity.this, getString(R.string.error_empty), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, R.string.error_empty, Toast.LENGTH_SHORT).show();
                 }else{
                     TextView textCongrat = findViewById(R.id.text_congrat);
                     textCongrat.setVisibility(View.VISIBLE);
